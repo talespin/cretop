@@ -23,12 +23,12 @@ _ = [x.click() for x in chrome.find_elements(By.TAG_NAME,'button')if x.text.find
 sleep(1)
 el = chrome.find_element(By.ID, 'idModel')
 el.clear()
-el.send_keys('NEWTALE9')
+el.send_keys('아이디')
 
 sleep(1)
 el = chrome.find_element(By.ID, 'pwModel')
 el.clear()
-el.send_keys('whdghksdl9090!')
+el.send_keys('패스워드')
 _ = [x.click() for x in chrome.find_elements(By.TAG_NAME,'button') if x.text == '로그인']
 
 sleep(2)
