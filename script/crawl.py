@@ -13,7 +13,7 @@ options = webdriver.ChromeOptions()
 options.add_argument(f"user-data-dir={profile_path}")
 
 service = Service()
-
+#chrome = webdriver.Chrome(service=Service(executable_path=ChromeDriverManager().install()))
 chrome = webdriver.Chrome(service=service, options=options)
 chrome.get('https://www.cretop.com/')
 
